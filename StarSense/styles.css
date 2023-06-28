@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, sans-serif;
+  }
+
+  .question-container {
+    text-align: center;
+    animation: fade-in 1s ease-in-out;
+  }
+
+  .question {
+    font-size: 72px;
+    margin-bottom: 1000px;
+  }
+
+  .answer {
+    font-size: 32px;
+    padding: 10px;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    font-family: Georgia, sans-serif;
+  }
+
+  .fade-out {
+    animation: fade-out 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    font-family: Georgia, sans-serif;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
